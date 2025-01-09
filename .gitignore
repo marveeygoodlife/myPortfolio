@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.me
+.env.previous
+
+# Logs
+logs/
+*.log
+
+# VS Code settings
+.vscode/
+
+# Build directories
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
