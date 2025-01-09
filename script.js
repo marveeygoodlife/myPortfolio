@@ -21,15 +21,15 @@
        navOverlay.style.width = "250px";
        mainContainer.style.marginLeft = "250px";
        displayNav.style.display = 'none';
-       myLogo[0].style.float = 'right';
-    
+       myLogo[0].style.textAlign = 'center';
+       myLogo[0].style.marginLeft = '.3rem';
     }
 
       function closeNav() {
        navOverlay.style.width = 0;
        mainContainer.style.marginLeft = "0";
-       myLogo[0].style.float = 'none';
-
+       myLogo[0].style.textAlign = 'left';
+       myLogo[0].style.marginLeft = 'none';
        displayNav.style.display = 'block';}
 
 
