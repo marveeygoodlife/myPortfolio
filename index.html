@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio website for showcasing projects and skills.">
-    <title>Marveey's Portfolio</title>
+<link rel="shortcut icon" href="images/favicon_io/favicon.ico" type="image/x-icon">    
+<script src="https://kit.fontawesome.com/184a11b74d.js" crossorigin="anonymous"></script>
+<title>Marveey's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
         <div class="logo" id="logo">MarveeyGoodlife</div>
         <!-- nav overlay  -->
         <nav id="sideNav" class="sideNav">
-            <a href="#" class="closeBtn" id="closeMenuBtn">&times;</a>
+            <a href="#" class="closeBtn" id="closeMenuBtn" title="Close Menu"><i class="fa-solid fa-xmark"></i></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,7 +23,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="#" id="openMenuBtn" class="menuBtn" onclick="openNav">&#9776;</a>
+        <a href="#" id="openMenuBtn" class="menuBtn" onclick="openNav" title="Open Menu"><i class="fa-solid fa-bars"></i></a>
     </header>
 <main>
     <div id="mainContainer">
@@ -60,7 +62,9 @@
     <section id="projects">
         <h2>Projects</h2>
         <p>Here are some of the projects I’ve worked on:</p>
-        <div class="projects-grid">
+        <hr>
+
+       <!--  <div class="projects-grid">
             <div class="project">
                 <img src="images/ILiveToThriv.png" width="400" height="400" alt="Project 1">
                 <h3>Portfolio Website</h3>
@@ -89,14 +93,55 @@
             <div class="project">
                 <img src="images/ILiveToThrive1.png" alt="Project 6">
                 <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! .</p>
+                <p> .</p>
             </div>
         </div>
+        --> <hr>
+        
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="images/ILiveToThriv.png" alt="Mountains" width="400" height="400">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/ILiveToThrive.png" alt="Lights" width="400" height="400">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/ILiveToThrive1.png" alt="Nature" width="400" height="400">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="images/mountain-climbing-8637953_1280.jpg" alt="Mountains" width="400" height="400">
+        <h3>My Work</h3>
+        <p>Lorem ipsum..Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <img src="images/pexels-ahcapture-30021202.jpg" alt="Bear" width="400" height="400">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum..Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellat nam ad quidem velit quam maiores modi!</p>
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
     </section>
 </div>
-<div>
-    <a href="#">scroll</a>
-</div>
+<button  onclick="topFunction()" id="scrollButton" title="Go to top">Top</button>
+
 </main>
 
     <footer id="contact">
@@ -108,15 +153,19 @@
         </div>
         <div class="social-links">
             <div class="para">
-                <p>Let's connect! You can reach me via the following platforms:</p>
+                <p class="paragraph">Let's connect! You can reach me via the following platforms:</p>
             </div>
             <div class="socialLinks">
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            <a href="https://x.com/marveeygoodlife" target="_blank" title="Twitter"> <i class="fa-brands fa-square-x-twitter"></i></a>
+
+            <a href="https://www.linkedin.com/in/marvellous-ediagbonya-064b50147/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://github.com/marveeygoodlife" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+
+            <a href="https://www.instagram.com/goodlifebymarveey/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
         </div>
-        <p>© 2025 MarveeyGoodlife. All Rights Reserved.</p>
+        <p class="license">© 2025 MarveeyGoodlife. All Rights Reserved.</p>
     </footer>
 </body>
 <script src="script.js" defer></script>

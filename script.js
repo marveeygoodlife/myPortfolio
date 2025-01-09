@@ -31,10 +31,48 @@
        myLogo[0].style.textAlign = 'left';
        myLogo[0].style.marginLeft = 'none';
        displayNav.style.display = 'block';}
-
-
-/* scroll to top button */
-
     } catch (error) {
         console.log(error + 'Error in code');
     }
+
+    
+/* scroll to top button */
+const myButton = document.querySelector('button');
+if (myButton) {
+    // Add scroll event listener
+    window.addEventListener('scroll', function() {
+        const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
+        console.log('Scroll top:', scrollTop);
+
+        if (scrollTop > 50) {
+            myButton.style.display = 'block'; // Show button
+        } else {
+            myButton.style.display = 'none'; // Hide button
+        }
+    })
+    
+};
+/* 
+if (myButton) {
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            myButton.style.display = 'block';
+            console.log('working');
+        } 
+        else {
+            myButton.style.display = 'none';
+            console.log('not working');
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        console.log('scrolling');
+    }
+
+    myButton.addEventListener('click', topFunction);
+} */
