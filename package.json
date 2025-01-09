@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marveeygoodlife/myPortfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Marvellous Goodlife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marveeygoodlife/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/marveeygoodlife/myPortfolio#readme"
+}
