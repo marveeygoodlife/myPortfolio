@@ -31,10 +31,6 @@
        myLogo[0].style.textAlign = 'left';
        myLogo[0].style.marginLeft = '0';
        displayNav.style.display = 'block';}
-
-
-/* scroll to top button */
-
     } catch (error) {
         console.log(error + 'Error in code');
     }
