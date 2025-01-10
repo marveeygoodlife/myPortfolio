@@ -29,7 +29,7 @@
        navOverlay.style.width = 0;
        mainContainer.style.marginLeft = "0";
        myLogo[0].style.textAlign = 'left';
-       myLogo[0].style.marginLeft = 'none';
+       myLogo[0].style.marginLeft = '0';
        displayNav.style.display = 'block';}
 
 
@@ -54,6 +54,14 @@ if (myButton) {
         }
     })
     
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        console.log('scrolling');
+    }
+       myButton.addEventListener('click', topFunction);
+       /* myButton.addEventListener('click', topFunction);   
+       myButton.addEventListener('click', topFunction); */
 };
 /* 
 if (myButton) {

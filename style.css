@@ -39,7 +39,7 @@ header { grid-area: header;
     color: #fff;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    transition: 0.3s;
     padding: 8px 8px 8px 32px;
     font-size: 4vw;
 }
@@ -89,7 +89,7 @@ header { grid-area: header;
 }
 /* Scroll to top button */
 #scrollButton {
-    display:  none;
+    display:  block;
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -186,45 +186,8 @@ section {
     padding: 10px;
 }
 /* Portfolio gallery style end */
-/* Projects Section */
-/* .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-} */
-/* 
-.project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    padding: 1rem;
-}
 
-.project img {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    max-width: 350px;
-}
-
-.project:hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
- }
-
-.project img:hover {
-    transform: scale(1.03);
-}
- */
-
+/* Footer style */
 footer {
     grid-area: footer;
     background: #333;
@@ -260,29 +223,54 @@ footer {
     text-decoration: underline;
     color: #2575fc;
 }
+/* FOOTER STYLE END */
 
 img { display: block;
     width: 100%;
     height: auto;
 }
+
+/* MEDIA QUERIES */
+
 @media (max-height:450px) {
     .sideNav {padding-top: 15px;}
     .sideNav a {font-size: 18px;}
 }
-@media (min-width:600px) and (max-width:900px) {
+
+/* TABLET PHONES */
+@media (min-width:600px) and (max-width:1024px) {
 .column {
     width: 45%;
 }
+
 body {
     background-color: #6a11cb;
+    font-size: 1.1vw;
 }
+
+.paragraph {
+    font-size: 1.1vw;
 }
-@media screen and (min-width: 1024px) {
+
+.license {
+    font-size: 1vw;
+}
+
+.footer-links a,
+.social-links a {
+   font-size: 1.1vw;
+}
+
+}
+
+/* LARGE SCREEN / DESKTOP */
+@media screen and (min-width: 1025px) {
 .column {
     width: 23.5%;
  }
  body {
     background-color: #2575fc;
+    font-size: 1.1vw;
 }
 .sideNav .closeBtn {
     display: none;
